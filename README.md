@@ -23,7 +23,7 @@ The programs in this repository have yet to have any details about installation.
 
 ## Contact & Sundries
 
-* mwebster@fabprojects.codes
+* mw@fabprojects.codes
 * Version v0.1
 * Tools used : ****
 
