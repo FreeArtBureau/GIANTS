@@ -1,5 +1,5 @@
 # GIANTS
-Séminaire : On The Shoulder Of Giants
+Séminaire : On The Shoulders Of Giants
 
 [![PyPI](https://img.shields.io/pypi/l/fsfe-reuse.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![reuse compliant](https://img.shields.io/badge/reuse-compliant-green.svg)](https://git.fsfe.org/reuse/reuse) 
