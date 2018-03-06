@@ -1,0 +1,297 @@
+/**
+ * CSS :
+ *   selectorlist {
+ *   property: value;
+ *   [more property:value; pairs]
+ *   }
+ *
+ *   REF : https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+ *
+ */
+
+ /**
+  * The General
+  */
+
+ .main {
+   position: relative;
+   width: 100%;
+   max-width: 960px;
+   margin: 5px auto 6px auto;
+   padding: 0 20px;
+   /*padding-bottom: 20px;*/
+   box-sizing: border-box;
+ }
+
+ .main_wide {
+   position: relative;
+   width: 100%;
+   max-width: 1080px;
+   margin: 5px auto 6px auto;
+   padding: 0 20px;
+   padding-bottom: 20px;
+   box-sizing: border-box;
+ }
+
+ body{
+   font-family: cmodern2;
+   font-size: 1.2em;
+   font-kerning: auto;
+   letter-spacing: 0.04em;
+   line-height: 1.2em;
+   color: rgba(255, 255, 255, 0.7);
+   background-color:#000000;
+ }
+
+ i{
+     font-family: cmodernItal;
+     font-size: 1em;
+     font-kerning: auto;
+     letter-spacing: 0.02em;
+     /*line-height: 1.7em;*/
+ }
+
+ hr{
+   display: block;
+   box-sizing: border-box;
+   border-width: 0.5px;
+   margin-bottom: 50px;
+ }
+
+
+h1 {
+  font-family: cmodernItal;
+  font-size: 3.7em;
+  font-kerning: auto;
+  letter-spacing: 0.01em;
+  line-height: 0.9em;
+  color: white;
+  margin-bottom: 35px;
+}
+
+h1.regular{
+  font-family: cmodern2;
+}
+
+h2.ital{
+  font-family: cmodernItal;
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  font-family: cmodern2;
+  font-size: 1.7em;
+  font-kerning: auto;
+  letter-spacing: 0.05em;
+  line-height: 1.0em;
+  color: white;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-family: cmodern2;
+  font-size: 1.0em;
+  color: white;
+  /*margin-bottom: 35px;*/
+}
+
+.titles{
+  font-size: 1.2em;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+a:visited {
+    color: #c0c;
+}
+
+.weblink {
+  font-family: cmodern2;
+  font-size: 1.0em;
+  font-kerning: auto;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: gold;
+
+}
+
+div{
+ margin: 0;
+ padding: 0;
+}
+
+
+/**
+ * CSS Grid Layouts :
+ *
+ */
+
+.gridText1{
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  grid-template-rows: auto;
+  grid-gap: 2%;
+}
+
+.gridText1 > p{
+  background: #eee;
+  padding: 1em;
+}
+
+.gridText2{
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  grid-template-rows: 65px auto;
+  grid-gap: 20px 5px;
+}
+
+.gridText2 > p{
+  /*background: #eee;*/
+}
+
+
+/**
+ * Image
+ */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image--full{
+  max-width: 100%;
+}
+
+
+
+/**
+ * Specifics
+ */
+
+.citation {
+  font-family: cmodernItal;
+  font-size: 2.3em;
+  line-height: 1.0em;
+  color: blue;
+  margin: 15px 48px;
+
+}
+
+.legend {
+  font-family: cmodernTitle;
+  font-size: 0.9em;
+  line-height: 0.5em;
+  color: white;
+  margin: 35px 50px;
+
+}
+
+.header-menu {
+    font-family: cmodernTitle;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    letter-spacing: .015em;
+    color: #f00;
+    margin-top: 5%;
+}
+
+.header-menu li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.footer{
+  font-family: cmodern1;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+  margin: 0 82px;
+}
+
+.footer h2{
+  font-family: cmodernItal;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+
+/**
+ * Media Specific
+ */
+
+
+@media (max-width: 840px) {
+  h1{
+    font-size: 2.3em;
+    line-height: 0.9em;
+  }
+}
+
+@media (max-width: 640px) {
+  h1{
+    font-size: 2.2em;
+  }
+  body{
+    font-size: 0.9em;
+  }
+  .citation{
+    font-size: 1.5em;
+  }
+  .header-menu {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 440px) {
+  h1{
+    font-size: 2.2em;
+  }
+  body{
+    font-size: 0.9em;
+  }
+  .citation{
+    font-size: 1.5em;
+  }
+  .titles{
+    font-size: 1.3em;
+  }
+  .header-menu {
+    font-size: 1.3em;
+  }
+}
+
+
+/**
+ * Additional small shit
+ */
+
+ .toggle-content {
+   font-family: cmodernItal;
+   font-kerning: auto;
+   line-height: 1.2em;
+   letter-spacing: 0.05em;
+ 	 display: none;
+ 	 height: 0;
+ 	 overflow: hidden;
+ 	 transition: height 550ms ease-in-out;
+
+ }
+
+ .toggle-content.is-visible {
+ 	display: block;
+ 	height: auto;
+ }

@@ -1,0 +1,31 @@
+/**
+ * Fonts
+ * @-rules are used in CSS to convey metadata, conditional
+ * information or other descriptive information
+ */
+
+
+@font-face {
+ font-family: "cmodern1";
+   src:url("../font/cm/cmunorm.ttf") format('truetype');
+}
+
+@font-face {
+ font-family: "cmodern2";
+   src:url("../font/cm/cmunrm.ttf") format('truetype');
+}
+
+@font-face {
+ font-family: "cmodernItal";
+   src:url("../font/cm/cmunsl.ttf") format('truetype');
+}
+
+@font-face {
+ font-family: "cmodern3";
+   src:url("../font/cm/cmunss.ttf") format('truetype');
+}
+
+@font-face {
+ font-family: "cmodernTitle";
+   src:url("../font/cm/cmuntt.ttf") format('truetype');
+}
